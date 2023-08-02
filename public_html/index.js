@@ -3,6 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
  */
 
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
+ */
+
 var jpdbBaseURL = 'http://api.login2explore.com:5577';
 var jpdbIRL = '/api/irl';
 var jpdbIML = '/api/iml';
@@ -100,7 +105,7 @@ function validateData() {
     return JSON.stringify(jsonStrObj);
 }
 
-function getStud()() {
+function getStud() {
     var stuIdJsonObj = getStuIdAsJsonObj();
     var getRequest = createGET_BY_KEYRequest(connToken, stuDBName, stuRelationName, stuIdJsonObj);
     jQuery.ajaxSetup({ async: false });
@@ -143,3 +148,4 @@ function changeData() {
     resetForm();
     $('#rollno').focus();
 }
+
